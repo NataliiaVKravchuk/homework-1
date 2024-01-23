@@ -482,3 +482,94 @@
 //     clearInterval(id)
 //   }
 // }, 3000)
+
+// class Car {
+//     static maxPrice = 50000;
+//     #price;
+  
+//     constructor({ price }) {
+//       this.#price = price;
+//     }
+  
+//     get price() {
+//       return this.#price;
+//     }
+  
+//     set price(newPrice) {
+//       if(newPrice <= Car.maxPrice) {
+//         this.#price = newPrice;
+//       }
+//     }
+//   }
+
+//   const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+// class User {
+//     email;
+  
+//     constructor(email) {
+//       this.email = email;
+//     }
+  
+//     get email() {
+//       return this.email;
+//     }
+  
+//     set email(newEmail) {
+//       this.email = newEmail;
+//     }
+//   }
+//   class Admin extends User {
+//     static role = {
+//       BASIC: "basic",
+//       SUPERUSER: "superuser",
+//     };
+  
+//     blacklistedEmails = [];
+  
+//     constructor({ email, access }) {
+//       super(email);
+//       this.access = access;
+//     }
+  
+//     blacklist(email){
+//       this.blacklistedEmails.push(email);
+//     }
+
+//     isBlacklisted(email) {
+//         return this.blacklistedEmails.includes(email);
+//       }
+  
+    
+//   }
+  
+//   const mango = new Admin({
+//     email: "mango@mail.com",
+//     access: Admin.role.SUPERUSER,
+//   });
+  
+//   console.log(mango.email); // "mango@mail.com"
+//   console.log(mango.access); // "superuser"
+  
+//   mango.blacklist("poly@mail.com");
+//   console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+//   console.log(mango.isBlacklisted("mango@mail.com")); // false
+//   console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// Практика з ментором кахут
+
+// const numbers = [5, 10, 25, 15];
+
+// numbers.forEach(
+//     function(number){
+//         console.log(this.a);
+//     },
+//     {a: "I am Groot"}
+// );

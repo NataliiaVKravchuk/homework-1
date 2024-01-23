@@ -888,3 +888,202 @@
 //     ...partialProduct,
 //   };
 // };
+
+
+// const users = [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     skills: ["ipsum", "lorem"],
+//     gender: "male",
+//     age: 37,
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+//     gender: "female",
+//     age: 34,
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     skills: ["nulla", "anim", "proident", "ipsum", "elit"],
+//     gender: "male",
+//     age: 24,
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     skills: ["adipisicing", "irure", "velit"],
+//     gender: "female",
+//     age: 21,
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     skills: ["ex", "culpa", "nostrud"],
+//     gender: "male",
+//     age: 27,
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     skills: ["non", "amet", "ipsum"],
+//     gender: "male",
+//     age: 38,
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     skills: ["lorem", "veniam", "culpa"],
+//     gender: "female",
+//     age: 39,
+//   },
+// ];
+
+// const calculateTotalBalance = users => {
+//   return users.reduce((total, item)=> total + item.balance, 0);
+// };
+
+// console.log(calculateTotalBalance(users))
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+
+// const ascendingReleaseDates = releaseDates.toSorted((a, b) => a - b);
+
+// const descendingReleaseDates = releaseDates.toSorted((a, b) => b - a);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// const names = books.filter(book => book.rating > MIN_BOOK_RATING).toSorted((firstBook, secondBook) => firstBook.author.localeCompare(secondBook.author))
+// .map(book => book.author);
+
+// console.log(names)
+
+// метод toSorted приймає правий і лівий елементи масиву для порівння
+
+// const arr = [3, 5, 1, 6, 8, 2, 3, 5, 7];
+
+// const result = arr.toSorted((right, left) => {
+//     return right - left;
+// });
+
+// console.log(result);
+
+// right - left - за зростаням
+// left - right - за спаданням
+
+// ======================================= Задачі з Володимиром
+
+// Задача 1
+
+// const user = {
+//     name: "Mango",
+//     age: 20,
+//     hobby: "html",
+//     premium: true,
+//   }
+  
+//   user.mood = "happy";
+//   user.hobby = "skydiving";
+//   user.premium = false;
+  
+//   for(const key of Object.keys(user)){
+//     console.log(`${key}: ${user[key]}`)
+//   };
+
+  
+// Задача 2
+
+// const salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130,
+// };
+
+// let sum = 0;
+// for(const salary of Object.values(salaries)){
+//     sum += salary;
+// };
+
+// console.log(sum)
+
+// Задача 3
+
+// const products = [
+//     {name: "product1", price: 100, amount: 0,},
+//     {name: "product2", price: 100, amount: 5,},
+//     {name: "product3", price: 100, amount: 2,},
+//     {name: "product4", price: 100, amount: 1,},
+//     {name: "product5", price: 100, amount: 6,},
+//     {name: "product6", price: 100, amount: 3,},
+//     {name: "product7", price: 100, amount: 8,},
+//     {name: "product8", price: 100, amount: 4,},
+// ];
+
+// function getAllPropValues(propName){
+//     const values = [];
+
+//     for(const product of products){
+//         if(product[propName] !== undefined){
+//             values.push(product[propName]);
+//         }
+//     }
+
+//     return values;
+// }
+
+// const result = getAllPropValues("amount");
+// console.log(result)

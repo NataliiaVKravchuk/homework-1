@@ -1112,3 +1112,64 @@
 
 // console.log(index1);
 // console.log(index2);
+
+// function getLastElementMeta(array) {
+//     const newArray = [];
+//     newArray[0] = array.length-1;
+//     newArray[1] = array[array.length-1];
+//     return newArray;
+//   };
+
+
+//   function getExtremeElements(array) {
+//     const newArray = [];
+//     newArray[0] = array[0];
+//     newArray.length = 2;
+//     newArray[newArray.length-1] = array[array.length-1];
+//     return newArray;
+//   };
+
+//   console.log(getExtremeElements([1, 10, 20]))
+
+//   function getSlice(array, value) {
+//     let newArray = [];
+//     if(array.indexOf(value)){
+//       newArray = array.slice(0,array.indexOf(value)+1);
+//     };
+//     return newArray;
+//   };
+
+//   console.log(getSlice(["Mango", "Poly", "Ajax"], "Mango"))
+
+// function calculateTotalPrice(order) {
+//     let total = 0;
+//     for(const item of order){
+//       total += item;
+//     };
+//     return total;
+//   };
+
+//   console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// function getEvenNumbers(start, end) {
+//     let arr = [];
+//     for(let i = start; i <= end; i += 1){
+//       if(i % 2 === 0){
+//         arr.push(i);
+//       };
+//     };
+//     return arr;
+//   };
+
+//   console.log(getEvenNumbers(6, 12))
+
+// function checkStorage(storage, item) {
+//     const normalizedItem = item.toLowerCase();
+//     if (storage.includes(normalizedItem)) {
+//       return `${normalizedItem} is available to order!`;
+//   } else {
+//     return "Sorry! We are out of stock!";
+//   };
+//   };
+
+//   console.log(checkStorage(["apple", "plum", "pear"], "plum"))

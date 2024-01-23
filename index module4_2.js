@@ -1127,3 +1127,63 @@
 // }
 
 // console.log(calculateEvenTotal(8))
+
+
+// Заняття 4,2 з Володимиром
+
+// Як з перебору масиву об'єктів зробити масив інших об'єктів
+
+// const friends = [
+//   {
+//     name: "Den",
+//     skills: ["html", "css"],
+//     age: 18,
+//   },
+//   {
+//     name: "Slava",
+//     skills: ["js", "react"],
+//     age: 22,
+//   },
+//   {
+//     name: "Max",
+//     skills: ["node.js", "express"],
+//     age: 19,
+//   },
+// ];
+
+// function getAllNames(allFriends){
+//   const result = [];
+
+//   for(const friend of allFriends){
+//     const obj = {
+//       name: friend.name,
+//       age: friend.age,
+//     };
+
+//     result.push(obj);
+//   }
+//   return result;
+// }
+
+// console.log(getAllNames(friends));
+
+// Перемішати масив
+
+// const playlist = {
+//   name: "My amazing playlist",
+//   rating: 5,
+//   tracks: ["track-1", "track-2", "track-3", "track-4"],
+
+//   shakePlaylist(){
+//     for (let i = 0; i < this.tracks.length; i++){
+//       const randomIndex = Math.ceil(Math.random() * this.tracks.length-1);
+
+//       const temp = this.tracks[i];
+//       this.tracks[i] = this.tracks[randomIndex];
+//       this.tracks[randomIndex] = temp;
+//     }
+//   },
+// };
+
+// playlist.shakePlaylist();
+// console.log(playlist);
